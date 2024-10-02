@@ -1,0 +1,44 @@
+:root {
+    --background-color: #222222; /* Hintergrundfarbe */
+    --text-color: #cccccc; /* Textfarbe */
+    --link-color: #fd000d; /* Linkfarbe */
+}
+
+a {
+    text-decoration: none;
+    color: var(--link-color);
+}
+
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    font-family: 'Roboto', sans-serif;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    border-bottom: 3px double var(--text-color);
+
+    #navigation {
+        display: flex;
+        flex-direction: row;
+        gap: 15px;
+        padding: 10px;
+        align-items: center;
+
+        a {
+            font-size: 1.5rem;
+        }
+
+        a.clicked {
+            font-weight: bold;
+        }
+    }
+}
+
+#content {
+    width: 100%;
+    border: none;
+}

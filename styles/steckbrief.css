@@ -1,0 +1,19 @@
+div#steckbrief {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+
+    main {
+        article {
+            display: flex;
+            flex-direction: row;
+            gap: 20px;
+            padding: 20px;
+        }
+    }
+
+    aside {
+        border-left: 3px double var(--text-color);
+        padding: 10px;
+    }
+}
